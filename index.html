@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Application form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="logo">
+        <img src="h202a.jpeg" alt="Hostel.com">
+    </div>
+    <div id="outside">
+        <h1>Alok Hostel</h1>
+        <form id="survey" action="My-handling form-page" method="post">
+            <div class="bh">
+                <hr>
+                <h2 class="title">Apply for hostel</h2>
+                <p class="description">
+                    <b>Note:</b>Form is to be completed at least 10 days prior to date
+                </p>
+                <div>
+                    <legend>Personal Details:</legend>
+                    <div class="info">
+                        <div>
+                            <label id="name" for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label for="address">Address:</label>
+                            <input type="Address" id="address" name="Address" placeholder="Enter your address">
+                        </div>
+                        <div>
+                            <label id="email" for="email-level">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label id="number" for="phone">Phone Number:</label>
+                            <input type="number" id="number" name="number" placeholder="Enter your phone number">
+                        </div>
+                        <div>
+                            <label id="iq" for="iq">IQ:</label>
+                            <input type="number" id="iq" name="iq" placeholder="Enter IQ level">
+                        </div>
+                        <div>
+                            <label for="Gender">Gender</label>
+                            <p>
+                                <input type="radio" name="gender" value="male" checked>Male<br>
+                                <input type="radio" name="gender" value="female" checked>Female<br>
+                                <input type="radio" name="gender" value="other" checked>Other<br>
+                            </p>
+                        </div>
+                        <label for="date">Date of Proposed Outing:</label>
+                        <input type="date" name="bday">
+                    <div>
+                        <p>
+                            <label for="Age">Check All That Apply</label>
+                            <input type="checkbox" name="age" value="student">
+                            I am above 18<br>
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="politics">Education Level Completed:</label>
+                            <select id="dropdown2">
+                                <option value="University">University</option>
+                                <option value="College">College</option>
+                                <option value="Secondary">High School</option>
+                                <option value="None">None</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <legend>Essay Section:</legend>
+                    <div class="info">
+                    <div class="hostel">
+                        <label for="msg"></label>
+                        <p>Explain why you want to live in my hostel?</p>
+                        <textarea id="msg" name="message" rows="4" cols="50" placeholder="Enter the text"></textarea>
+                    </div>
+                    <div class="contact">
+                        <label for="msg">Please upload contact details</label>
+                        <br>
+                        <textarea id="msg2" name="message" rows="4" cols="50"
+                            placeholder="enter the text here"></textarea>
+                    </div>
+                    <p class="medical">Upload Bank statement,medical certificate here:
+                        <input type="file" id="myFile" name="filename">
+                        <input type="submit" id="btn">
+                    </p>
+                    </div>
+                </div>
+                <div id="Submitbutton">
+                    <button type="submit" id="submit">Send your application</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
