@@ -18,7 +18,7 @@ body{
 #logo{
    height: 20px;
    width: 10px;
-  /* position: absolute;*/
+   position: absolute;
    left: 70%;
 }
 #logo img{
@@ -93,6 +93,9 @@ button{
     width: 60px;
     height: 30px;
 }
+p{
+    font-size: 15px;
+}
 @media screen and (min-width:800px){
    #outside{
      margin:0 18%;
@@ -103,29 +106,110 @@ button{
      padding: 10px 0;
    }
 }
+@media screen and (max-width:1100px){
+    .hostel{
+        display: block;
+    }
+    .contact{
+        margin-left: 0px;
+    }
+    .medical{
+        display: inline;
+    }
+}
 @media screen and (max-width:800px) {
     body{
-        width: 100vw;
         padding: 0px;
         margin: 0px;
     }
     #logo{
-        align-items: center;
-        position: relative;
-        display: block;
+        left: 75%;
     }
-    #logo img{
-        flex-direction: row;
-    }
+    
     #outside{
         margin: 0 0;
         font-size: 0.6rem;
-        flex-direction: row;
     }
-   
     form{
         width:100vw;
         overflow-x: hidden;
     }
+    .hostel{
+    float: left;
+    }
+    #msg{
+        width: 96%;
+    }
+    .info{
+        display: block;
+    }
+    .contact{
+        display: block;
+        margin-left: 0px;
+        width: 96%;
+    }
+    #msg2{
+        width: 100%;
+    }
+    .medical{
+        display: inline;
+    }
+
+#myFile {
+    margin-bottom: 5px;
+}
+
+.medical p {
+    font-size: 12px;
+    padding: 10px;
+}
    
+}
+@media screen and (max-width:500px){
+   .abc{
+   display: flex;
+   }
+   .bh{
+    margin-top: 10px;
+   }
+  #logo{
+   margin: 0px;
+   width: 100%;
+   height: 100px;
+   left: 0;
+   position: absolute;
+   display: inline;
+   padding: 0 36%;
+  }
+
+#outside {
+    display: block;
+    padding-top:110px ;
+}
+.age input{
+    width: 50px;
+}
+.gen label {
+    font-size: 16px;
+}
+.gen input {
+    width: 55px;
+}
+  
+}
+@media screen and (max-width:300px){
+    .info input{
+       width: 95%;
+    }
+
+
+
+input[type="checkbox"] {width: 50px;}
+    .bd label{
+        width: 100vw;
+        font-size: 12px;
+    }
+    .age label{
+        width: 100vw;
+    }
 }
